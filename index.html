@@ -31,6 +31,8 @@
           extend: {
             colors: {
               "first-color": "#F85559",
+              "left-color": "#121212",
+              "right-color": "rgba(18, 18, 18, 0.00)",
             },
           },
         },
@@ -44,11 +46,11 @@
     </style>
   </head>
   <body class="font-lato">
-    <header class="max-w-screen-lg mx-auto">
+    <header class="max-w-[410px] md:max-w-screen-lg mx-auto">
       <nav class="bg-first-color rounded-full my-4 px-4">
-        <div class="navbar rounded-full">
+        <div class="navbar md:justify-between">
           <div class="navbar-start hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-white ">
+            <ul class="menu menu-horizontal px-1 text-white">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
@@ -76,12 +78,26 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-first-color rounded-box w-52 text-white"
+                class="menu menu-sm dropdown-content mt-3 z-30 p-2 shadow bg-first-color rounded-box w-52 text-white"
               >
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
                 <li><a>Shop</a></li>
                 <li><a>All Fruits</a></li>
+                <li>
+                  <a>
+                    <div class="navbar-end relative h-10">
+                      <input
+                        type="text"
+                        placeholder="Search here"
+                        class="input w-full max-w-xs rounded-full h-10"
+                      />
+                      <span class="material-symbols-outlined absolute right-4">
+                        search
+                      </span>
+                    </div>
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="flex justify-center items-center cursor-pointer">
@@ -90,7 +106,7 @@
             </div>
           </div>
 
-          <div class="navbar-end relative h-10">
+          <div class="navbar-end hidden md:flex relative h-10">
             <input
               type="text"
               placeholder="Search here"
@@ -102,6 +118,81 @@
           </div>
         </div>
       </nav>
+
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/banner1.png" class="w-full" />
+          <div
+            class="absolute z-20 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+          <div
+            class="w-full h-full bg-gradient-to-b from-left-color to-right-color absolute z-10 text-white text-center"
+          >
+            <h1 class="mt-3 text-2xl font-bold mb-1 md:mt-14 md:text-5xl md:font-extrabold md:mb-4">
+              Exotic tastes at your <br> doorstep
+            </h1>
+            <p class="mb-1 font-light md:mb-4 md:font-normal">We supply highly quality organic products</p>
+            <button class="btn bg-first-color text-white outline-none border-none hover:bg-first-color">Shop Now</button>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/banner2.png" class="w-full" />
+          <div
+            class="absolute z-20 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+          <div
+            class="w-full h-full bg-gradient-to-b from-left-color to-right-color absolute z-10 text-white text-center"
+          >
+            <h1 class="mt-3 text-2xl font-bold mb-1 md:mt-14 md:text-5xl md:font-extrabold md:mb-4">
+              Exotic tastes at your <br> doorstep
+            </h1>
+            <p class="mb-1 font-light md:mb-4 md:font-normal">We supply highly quality organic products</p>
+            <button class="btn bg-first-color text-white outline-none border-none hover:bg-first-color">Shop Now</button>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/banner3.png" class="w-full" />
+          <div
+            class="absolute z-20 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+          <div
+            class="w-full h-full bg-gradient-to-b from-left-color to-right-color absolute z-10 text-white text-center"
+          >
+            <h1 class="mt-3 text-2xl font-bold mb-1 md:mt-14 md:text-5xl md:font-extrabold md:mb-4">
+              Exotic tastes at your <br> doorstep
+            </h1>
+            <p class="mb-1 font-light md:mb-4 md:font-normal">We supply highly quality organic products</p>
+            <button class="btn bg-first-color text-white outline-none border-none hover:bg-first-color">Shop Now</button>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./images/banner4.png" class="w-full" />
+          <div
+            class="absolute z-20 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+          <div
+            class="w-full h-full bg-gradient-to-b from-left-color to-right-color absolute z-10 text-white text-center"
+          >
+            <h1 class="mt-3 text-2xl font-bold mb-1 md:mt-14 md:text-5xl md:font-extrabold md:mb-4">
+              Exotic tastes at your <br> doorstep
+            </h1>
+            <p class="mb-1 font-light md:mb-4 md:font-normal">We supply highly quality organic products</p>
+            <button class="btn bg-first-color text-white outline-none border-none hover:bg-first-color">Shop Now</button>
+          </div>
+        </div>
+      </div>
     </header>
   </body>
 </html>
