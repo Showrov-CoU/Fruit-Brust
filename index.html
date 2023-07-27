@@ -54,9 +54,9 @@
   </head>
   <body class="font-lato">
     <header class="max-w-[410px] md:max-w-[760px] lg:max-w-screen-lg mx-auto">
-      <nav class="bg-first-color rounded-full my-4 px-4">
-        <div class="navbar md:justify-between">
-          <div class="navbar-start hidden lg:flex">
+      <nav class="md:bg-first-color bg-white rounded-full my-4 md:px-4">
+        <div class="navbar px-0 md:px-1 md:justify-between">
+          <div class="flex-1 navbar-start hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-white">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
@@ -65,14 +65,14 @@
             </ul>
           </div>
 
-          <div class="navbar-center">
+          <div class="flex-1 md:justify-start lg:justify-center flex justify-between w-full md:w-fit md:navbar-center">
             <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <label tabindex="0" class="btn btn-ghost px-0 lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
                   fill="none"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 20 20"
                   stroke="currentColor"
                 >
                   <path
@@ -85,7 +85,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-30 p-2 shadow bg-first-color rounded-box w-52 text-white"
+                class="menu menu-sm dropdown-content mt-2 z-30 p-2 shadow bg-first-color rounded-box w-52 text-white"
               >
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
@@ -109,11 +109,11 @@
             </div>
             <div class="flex justify-center items-center cursor-pointer">
               <img src="images/logo.png" alt="" class="w-9 h-9" />
-              <a class="ml-2 text-white text-2xl font-bold">Fruit Burst</a>
+              <a class="ml-2 text-left-color md:text-white text-2xl font-bold">Fruit Burst</a>
             </div>
           </div>
 
-          <div class="navbar-end hidden md:flex relative h-10">
+          <div class="flex-1 navbar-end hidden md:flex relative h-10">
             <input
               type="text"
               placeholder="Search here"
@@ -285,7 +285,6 @@
         </div>
       </div>
     </header>
-
     <main
       class="max-w-[410px] md:max-w-[760px] lg:max-w-screen-lg mx-auto md:mt-20 lg:mt-36 bg-white"
     >
@@ -665,7 +664,6 @@
                     />
                   </div>
                   <div class="modal-action flex justify-center gap-5">
-
                     <button
                       class="btn text-first-color border-2 border-first-color capitalize hover:bg-white"
                     >
@@ -775,7 +773,6 @@
                     />
                   </div>
                   <div class="modal-action flex justify-center gap-5">
-
                     <button
                       class="btn text-first-color border-2 border-first-color capitalize hover:bg-white"
                     >
